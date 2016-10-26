@@ -72,6 +72,9 @@ void HelloWorldFyberListener::onInterstitialFailed() {
 }
 
 void HelloWorldFyberListener::onBrandEngageClientReceiveOffers(bool areOffersAvailable) {
+    if (areOffersAvailable) {
+        sdkbox::PluginFyber::showOffers();
+    }
 }
 
 void HelloWorldFyberListener::onBrandEngageClientChangeStatus(int status, const std::string& msg) {
