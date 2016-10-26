@@ -27,6 +27,7 @@ THE SOFTWARE.
 package org.cocos2dx.cpp;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
+import com.fyber.annotations.FyberSDK;
 
 @FyberSDK
 public class AppActivity extends Cocos2dxActivity {
