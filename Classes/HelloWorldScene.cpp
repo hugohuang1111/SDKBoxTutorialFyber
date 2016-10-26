@@ -54,6 +54,9 @@ void HelloWorldFyberListener::onVirtualCurrencyConnectorSuccess(double deltaOfCo
 
 void HelloWorldFyberListener::onCanShowInterstitial(bool canShowInterstitial) {
     CCLOG("onCanShowInterstitial %s", canShowInterstitial ? "yes" : "no");
+    if (canShowInterstitial) {
+        sdkbox::PluginFyber::showInterstitial();
+    }
 }
 
 void HelloWorldFyberListener::onInterstitialDidShow() {
